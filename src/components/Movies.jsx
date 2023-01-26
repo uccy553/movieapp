@@ -42,7 +42,7 @@ const Movies = () => {
     <div className={toggle ? 'mainBgColor' : 'secondaryBgColor'}>
         <div className='movies-container'>
             {movieData.map((movie) => (
-                <div key={movie.id} style={{ position: 'relative', top: '5em' }}>
+                <div key={movie.id} style={{ marginTop: '5em' }}>
                     <div id={trailer ? 'container' : 'NoContainer'}>
                     <AiFillPlayCircle color='#fff' fontSize={40} id={trailer ? 'playIcon' : 'hide'} onClick={() => MoviesTitle(movie)} style={{ zIndex: '1' }} />
                     <img src={movie.poster_path ? `${image}${movie.poster_path}` : noi} alt="movie-poster" onClick={() => MoviesTitle(movie)} />
