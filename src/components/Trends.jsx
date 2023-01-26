@@ -42,7 +42,7 @@ const Trends = () => {
             <div className={toggle ? 'mainBgColor' : 'secondaryBgColor'}>
                 <div className='movies-container'>
                     {trends.map((trend) => (
-                        <div key={trend.id} id={trailer ? 'container' : 'NoContainer'} style={{ marginTop: '4em' }}>
+                        <div key={trend.id} id={trailer ? 'container' : 'NoContainer'} style={{ marginTop: '3.8em' }}>
                             <AiFillPlayCircle color='#fff' fontSize={40} id={trailer ? "playIcon" : 'hide'} onClick={() => TrendTitle(trend)} style={{ zIndex: '1' }} />
 
                             <img src={trend.poster_path ? `${image}${trend.poster_path}` : noi} alt={trend.name} onClick={() => TrendTitle(trend)} />
