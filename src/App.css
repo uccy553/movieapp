@@ -470,7 +470,7 @@ button:hover{
 
   .movies-container img {
     width: 250px;
-    height: fit-content;
+     height: 350px;
   }
 
   .input {
