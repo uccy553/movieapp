@@ -40,7 +40,7 @@ const TvShows = () => {
     <div className={toggle ? 'mainBgColor' : 'secondaryBgColor'}>
         <div className='movies-container'>
       {showData.map((data) => (
-        <div key={data.id} style={{ marginTop: '5em' }}>
+        <div key={data.id} style={{ marginTop: '3.8em' }}>
             <div id={trailer ? 'container' : 'NoContainer'}>
                 <AiFillPlayCircle color='#fff' fontSize={40} id={trailer ? "playIcon" : 'hide'} onClick={() => TvShowTitle(data)} style={{ zIndex: '1' }} />
                 <img src={data.poster_path ? `${image}${data.poster_path}` : noi} alt={data.name} onClick={() => TvShowTitle(data)} />
