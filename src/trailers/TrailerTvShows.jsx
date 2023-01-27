@@ -22,7 +22,7 @@ useEffect(() => {
       if (!videoUrl) {
           setShowError(true)
       }
-  }, 7000)
+  }, 10000)
   return () => clearTimeout(timeoutId);
 }, [videoUrl]);
   return (
