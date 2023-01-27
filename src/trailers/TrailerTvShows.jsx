@@ -37,7 +37,7 @@ useEffect(() => {
 
              {/* Display the overview below the video */}
              {showData.filter(movie => movie.name === TvShowsTitle).map(filteredMovie => (
-                <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+                <div key={filteredMovie.id} style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                     <p id={filteredMovie.overview.length > 350 ? "small-text" : "normal-text"} className={toggle ? 'mainColor' : 'secondaryColor'}>{filteredMovie.overview}</p>
                     <p style={{ fontSize: '1.3em' }} className={toggle ? 'mainColor' : 'secondaryColor'}>release date: {filteredMovie.first_air_date}</p>
                 </div>
