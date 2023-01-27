@@ -39,7 +39,7 @@ useEffect(() => {
              {movieData.filter(movie => movie.title === moviesTitle).map(filteredMovie => (
                 <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
                      <p id={filteredMovie.overview.length > 350 ? "small-text" : "normal-text"} className={toggle ? 'mainColor' : 'secondaryColor'}>{filteredMovie.overview}</p>
-                    <p style={{ fontSize: '1.3em' }} className={toggle ? 'mainColor' : 'secondaryColor'}>release date: {filteredMovie.release_date}</p>
+                    <p style={{ fontSize: '1em' }} className={toggle ? 'mainColor' : 'secondaryColor'}>release date: {filteredMovie.release_date}</p>
                 </div>
             ))}
             
