@@ -13,7 +13,7 @@ const Trends = () => {
   
   const input = inputValue
   const shown = '/trending/all/week'
-  const API = `https://api.themoviedb.org/3/trending/all/week?api_key=db082cf4f9bb9efd32884473afa84d3f`;
+  const API = `https://api.themoviedb.org/3/trending/all/day?api_key=db082cf4f9bb9efd32884473afa84d3f`;
   const image = 'https://image.tmdb.org/t/p/w500/';
 
   const trending = async () => {
