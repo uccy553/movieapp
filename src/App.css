@@ -31,11 +31,6 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
   background-color: #61fd53;
 }
-/* header {
-  position: sticky;
-  z-index: 999 ;
-  width: 100%;
-} */
 
 
 nav {
@@ -469,7 +464,7 @@ button:hover{
 }
 
 #normal-text {
-  font-size: .9em;
+  font-size: .7em;
   text-align: center;
   width: 80%;
 }
@@ -561,7 +556,7 @@ margin: 5px 0;
 }
 
 #normal-text {
-  font-size: .8em;
+  font-size: .9em;
   text-align: center;
   width: 80%;
 }
